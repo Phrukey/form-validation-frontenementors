@@ -1,0 +1,162 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 2.2rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background: url(/images/bg-intro-mobile.png)hsl(0, 100%, 74%) no-repeat 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  padding: 3rem;
+  padding-top: 5rem;
+  
+  /* margin: auto; */
+  margin-bottom: 3rem;
+}
+
+.showcase h1 {
+  padding: 1.5rem;
+  padding-top: 5rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+}
+
+.showcase p {
+  font-size: 1.6rem;
+}
+
+.signup {
+  padding: 3rem;
+  /* border: 1px solid black; */
+}
+
+.signup .trial {
+  padding: 2.2rem;
+  background: hsl(248, 32%, 49%);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 8px  5px  hsl(154, 59%, 51%,0.3);
+}
+
+.signup .trial p {
+  min-width: 60%;
+  margin: auto;
+}
+
+.signup .form-group {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 8px  5px  hsl(154, 59%, 51%,0.3);
+}
+
+.signup .form-group .input-group {
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+ }
+
+.signup .form-group input {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: .6rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+.signup .form-group input:first-child {
+  margin-top: 1rem;
+}
+
+.signup .form-group .input-group img {
+  position: absolute;
+  top: 1.4rem;
+  right: 1rem;
+  visibility: hidden;
+}
+.signup .form-group .error img {
+  /* position: absolute;
+  top: 1.4rem;
+  right: 1rem; */
+  visibility: visible;
+}
+
+.signup .form-group .input-group small {
+  position: absolute;
+  color: red;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+
+.signup .form-group .error small {
+  visibility: visible;
+  color: red;
+}
+
+.signup .form-group  button {
+  background: hsl(154, 59%, 51%);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  border: transparent;
+  border-radius: .6rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px hsl(154, 59%, 51%, 0.9);
+}
+
+.signup .form-group p {
+  color:  hsl(154, 59%, 51%);
+  font-weight: 500;
+}
+
+.signup .form-group span {
+  color: hsl(0, 100%, 74%) ;
+}
+
+@media(min-width: 700px) {
+  body {
+    background: url(/images/bg-intro-desktop.png)hsl(0, 100%, 74%) no-repeat 100%;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    min-height: 100vh;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .showcase {
+    place-self: center;
+    text-align: left;
+  }
+
+  .showcase h1 {
+    font-size: 5rem;
+    padding-left: 0;
+    line-height: 5rem;
+  }
+}
